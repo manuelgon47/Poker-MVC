@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		181704711CC5565000BFE8D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704701CC5565000BFE8D8 /* AppDelegate.swift */; };
-		181704731CC5565000BFE8D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704721CC5565000BFE8D8 /* ViewController.swift */; };
-		181704761CC5565000BFE8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181704741CC5565000BFE8D8 /* Main.storyboard */; };
 		181704791CC5565000BFE8D8 /* Poker_Help.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181704771CC5565000BFE8D8 /* Poker_Help.xcdatamodeld */; };
 		1817047B1CC5565000BFE8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1817047A1CC5565000BFE8D8 /* Assets.xcassets */; };
-		1817047E1CC5565000BFE8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817047C1CC5565000BFE8D8 /* LaunchScreen.storyboard */; };
 		181704891CC5565100BFE8D8 /* Poker_HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704881CC5565100BFE8D8 /* Poker_HelpTests.swift */; };
+		181704951CC57B1900BFE8D8 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704941CC57B1900BFE8D8 /* ResultController.swift */; };
+		181704971CC57B5A00BFE8D8 /* ParentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704961CC57B5A00BFE8D8 /* ParentController.swift */; };
+		181704991CC57BE200BFE8D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704981CC57BE200BFE8D8 /* ViewController.swift */; };
+		1817049F1CC57C5700BFE8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817049B1CC57C5700BFE8D8 /* LaunchScreen.storyboard */; };
+		181704A01CC57C5700BFE8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817049D1CC57C5700BFE8D8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +31,17 @@
 /* Begin PBXFileReference section */
 		1817046D1CC5565000BFE8D8 /* Poker Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker Help.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181704701CC5565000BFE8D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181704721CC5565000BFE8D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		181704751CC5565000BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181704781CC5565000BFE8D8 /* Poker_Help.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Poker_Help.xcdatamodel; sourceTree = "<group>"; };
 		1817047A1CC5565000BFE8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1817047D1CC5565000BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1817047F1CC5565000BFE8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		181704841CC5565100BFE8D8 /* Poker HelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poker HelpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181704881CC5565100BFE8D8 /* Poker_HelpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poker_HelpTests.swift; sourceTree = "<group>"; };
 		1817048A1CC5565100BFE8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181704941CC57B1900BFE8D8 /* ResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultController.swift; path = Controllers/ResultController.swift; sourceTree = "<group>"; };
+		181704961CC57B5A00BFE8D8 /* ParentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParentController.swift; path = Controllers/ParentController.swift; sourceTree = "<group>"; };
+		181704981CC57BE200BFE8D8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		1817049C1CC57C5700BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1817049E1CC57C5700BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +83,11 @@
 		1817046F1CC5565000BFE8D8 /* Poker Help */ = {
 			isa = PBXGroup;
 			children = (
+				181704A11CC57C6200BFE8D8 /* Models */,
+				1817049A1CC57C1200BFE8D8 /* Views */,
+				181704931CC57AF000BFE8D8 /* Controllers */,
 				181704701CC5565000BFE8D8 /* AppDelegate.swift */,
-				181704721CC5565000BFE8D8 /* ViewController.swift */,
-				181704741CC5565000BFE8D8 /* Main.storyboard */,
 				1817047A1CC5565000BFE8D8 /* Assets.xcassets */,
-				1817047C1CC5565000BFE8D8 /* LaunchScreen.storyboard */,
 				1817047F1CC5565000BFE8D8 /* Info.plist */,
 				181704771CC5565000BFE8D8 /* Poker_Help.xcdatamodeld */,
 			);
@@ -97,6 +101,32 @@
 				1817048A1CC5565100BFE8D8 /* Info.plist */,
 			);
 			path = "Poker HelpTests";
+			sourceTree = "<group>";
+		};
+		181704931CC57AF000BFE8D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				181704941CC57B1900BFE8D8 /* ResultController.swift */,
+				181704981CC57BE200BFE8D8 /* ViewController.swift */,
+				181704961CC57B5A00BFE8D8 /* ParentController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1817049A1CC57C1200BFE8D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1817049B1CC57C5700BFE8D8 /* LaunchScreen.storyboard */,
+				1817049D1CC57C5700BFE8D8 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		181704A11CC57C6200BFE8D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1817047E1CC5565000BFE8D8 /* LaunchScreen.storyboard in Resources */,
+				181704A01CC57C5700BFE8D8 /* Main.storyboard in Resources */,
 				1817047B1CC5565000BFE8D8 /* Assets.xcassets in Resources */,
-				181704761CC5565000BFE8D8 /* Main.storyboard in Resources */,
+				1817049F1CC57C5700BFE8D8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181704731CC5565000BFE8D8 /* ViewController.swift in Sources */,
+				181704991CC57BE200BFE8D8 /* ViewController.swift in Sources */,
+				181704951CC57B1900BFE8D8 /* ResultController.swift in Sources */,
+				181704971CC57B5A00BFE8D8 /* ParentController.swift in Sources */,
 				181704791CC5565000BFE8D8 /* Poker_Help.xcdatamodeld in Sources */,
 				181704711CC5565000BFE8D8 /* AppDelegate.swift in Sources */,
 			);
@@ -227,20 +259,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		181704741CC5565000BFE8D8 /* Main.storyboard */ = {
+		1817049B1CC57C5700BFE8D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				181704751CC5565000BFE8D8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1817047C1CC5565000BFE8D8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1817047D1CC5565000BFE8D8 /* Base */,
+				1817049C1CC57C5700BFE8D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1817049D1CC57C5700BFE8D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1817049E1CC57C5700BFE8D8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
