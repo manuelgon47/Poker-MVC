@@ -65,7 +65,11 @@ class ViewController: ParentController {
         self.csiValue = csi
         
         // PN
-        let pn:Double = csi * leftOpponentsValue
+        var pn:Double = csi * leftOpponentsValue
+        // Si hay 9 oponentes y el ante es mayor que 1/5 * el smallBlind: Al PN le restamos un 5%
+        if playersValue >= 9 && anteValue > ((4/5)*smallBlindValue) {
+            pn = pn * 0.95
+        }
         self.pnValue = pn
     }
     
