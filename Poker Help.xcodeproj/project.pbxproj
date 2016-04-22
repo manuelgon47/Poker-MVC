@@ -16,6 +16,11 @@
 		181704991CC57BE200BFE8D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704981CC57BE200BFE8D8 /* ViewController.swift */; };
 		1817049F1CC57C5700BFE8D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817049B1CC57C5700BFE8D8 /* LaunchScreen.storyboard */; };
 		181704A01CC57C5700BFE8D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1817049D1CC57C5700BFE8D8 /* Main.storyboard */; };
+		181704B31CCA062100BFE8D8 /* TablePowerNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704B21CCA062100BFE8D8 /* TablePowerNumbers.swift */; };
+		181704B91CCAB56A00BFE8D8 /* PowerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704B81CCAB56A00BFE8D8 /* PowerNumber.swift */; };
+		181704BB1CCAB60700BFE8D8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704BA1CCAB60700BFE8D8 /* Card.swift */; };
+		181704BE1CCAD22600BFE8D8 /* PNCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704BD1CCAD22600BFE8D8 /* PNCollectionViewCell.swift */; };
+		181704C11CCAD28200BFE8D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181704C01CCAD28200BFE8D8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,11 @@
 		181704981CC57BE200BFE8D8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		1817049C1CC57C5700BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1817049E1CC57C5700BFE8D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		181704B21CCA062100BFE8D8 /* TablePowerNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TablePowerNumbers.swift; path = Models/TablePowerNumbers.swift; sourceTree = "<group>"; };
+		181704B81CCAB56A00BFE8D8 /* PowerNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PowerNumber.swift; path = Models/PowerNumber.swift; sourceTree = "<group>"; };
+		181704BA1CCAB60700BFE8D8 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Models/Card.swift; sourceTree = "<group>"; };
+		181704BD1CCAD22600BFE8D8 /* PNCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PNCollectionViewCell.swift; path = Partial/PNCollectionViewCell.swift; sourceTree = "<group>"; };
+		181704C01CCAD28200BFE8D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Utils/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,8 @@
 		1817046F1CC5565000BFE8D8 /* Poker Help */ = {
 			isa = PBXGroup;
 			children = (
+				181704BF1CCAD26F00BFE8D8 /* Utils */,
+				181704BC1CCAD1E200BFE8D8 /* Partial */,
 				181704A11CC57C6200BFE8D8 /* Models */,
 				1817049A1CC57C1200BFE8D8 /* Views */,
 				181704931CC57AF000BFE8D8 /* Controllers */,
@@ -125,8 +137,27 @@
 		181704A11CC57C6200BFE8D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				181704BA1CCAB60700BFE8D8 /* Card.swift */,
+				181704B21CCA062100BFE8D8 /* TablePowerNumbers.swift */,
+				181704B81CCAB56A00BFE8D8 /* PowerNumber.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		181704BC1CCAD1E200BFE8D8 /* Partial */ = {
+			isa = PBXGroup;
+			children = (
+				181704BD1CCAD22600BFE8D8 /* PNCollectionViewCell.swift */,
+			);
+			name = Partial;
+			sourceTree = "<group>";
+		};
+		181704BF1CCAD26F00BFE8D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				181704C01CCAD28200BFE8D8 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +210,7 @@
 				TargetAttributes = {
 					1817046C1CC5565000BFE8D8 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = VPW6D479YW;
+						DevelopmentTeam = A42D9VM4S5;
 					};
 					181704831CC5565100BFE8D8 = {
 						CreatedOnToolsVersion = 7.3;
@@ -234,7 +265,12 @@
 			files = (
 				181704991CC57BE200BFE8D8 /* ViewController.swift in Sources */,
 				181704951CC57B1900BFE8D8 /* ResultController.swift in Sources */,
+				181704B31CCA062100BFE8D8 /* TablePowerNumbers.swift in Sources */,
+				181704B91CCAB56A00BFE8D8 /* PowerNumber.swift in Sources */,
+				181704BE1CCAD22600BFE8D8 /* PNCollectionViewCell.swift in Sources */,
+				181704C11CCAD28200BFE8D8 /* Constants.swift in Sources */,
 				181704971CC57B5A00BFE8D8 /* ParentController.swift in Sources */,
+				181704BB1CCAB60700BFE8D8 /* Card.swift in Sources */,
 				181704791CC5565000BFE8D8 /* Poker_Help.xcdatamodeld in Sources */,
 				181704711CC5565000BFE8D8 /* AppDelegate.swift in Sources */,
 			);
@@ -367,7 +403,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Poker Help/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mgonzalez.Poker-Help";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +416,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Poker Help/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mgonzalez.Poker-Help";
 				PRODUCT_NAME = "$(TARGET_NAME)";
