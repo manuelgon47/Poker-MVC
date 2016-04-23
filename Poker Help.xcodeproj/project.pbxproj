@@ -407,7 +407,7 @@
 				INFOPLIST_FILE = "Poker Help/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mgonzalez.Poker-Help";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgonzalez.PokerHelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -420,7 +420,7 @@
 				INFOPLIST_FILE = "Poker Help/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mgonzalez.Poker-Help";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mgonzalez.PokerHelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -468,6 +468,7 @@
 				1817048F1CC5565100BFE8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181704901CC5565100BFE8D8 /* Build configuration list for PBXNativeTarget "Poker HelpTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +477,7 @@
 				181704921CC5565100BFE8D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
