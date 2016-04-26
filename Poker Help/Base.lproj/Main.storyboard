@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Poker Help-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Poker_Help" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +49,7 @@
                                             <constraint firstItem="Hdq-sv-n01" firstAttribute="top" secondItem="4vM-CB-eeE" secondAttribute="top" constant="8" id="mdE-g3-NOI"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-m3-ZWu">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-m3-ZWu">
                                         <rect key="frame" x="187" y="0.0" width="186" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Big Blind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTX-Di-Vnk">
@@ -78,7 +78,7 @@
                                             <constraint firstAttribute="trailing" secondItem="lTX-Di-Vnk" secondAttribute="trailing" constant="8" id="z5V-q3-Etq"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50k-Nv-7id">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="50k-Nv-7id">
                                         <rect key="frame" x="373" y="0.0" width="187" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBi-Eg-6Wn">
@@ -186,7 +186,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="VyO-Zt-TaB" secondAttribute="trailing" id="yZ9-o9-IpR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="yRL-LB-JOf"/>
+                    <navigationItem key="navigationItem" title="Poker Help" id="yRL-LB-JOf"/>
                     <connections>
                         <outlet property="ante" destination="ST3-4e-5Yh" id="0lO-IU-wAu"/>
                         <outlet property="bigBlind" destination="UX6-dS-kRS" id="ytT-hD-kIO"/>
@@ -201,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="1017" y="-370"/>
         </scene>
-        <!--Result Controller-->
+        <!--Power Number-->
         <scene sceneID="LSl-BD-m6P">
             <objects>
                 <viewController id="EeB-Ie-mfj" customClass="ResultController" customModule="Poker_Help" customModuleProvider="target" sceneMemberID="viewController">
@@ -309,6 +309,7 @@
                             <constraint firstItem="Jab-fK-8eM" firstAttribute="leading" secondItem="t1W-zU-0yV" secondAttribute="leadingMargin" id="vLS-Gv-trS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Power Number" id="KPf-ba-1Ti"/>
                     <connections>
                         <outlet property="collectionView" destination="Jab-fK-8eM" id="oii-YA-QdK"/>
                         <outlet property="cpr" destination="QNb-b7-QbB" id="Z45-55-g5Q"/>
