@@ -132,6 +132,10 @@ class ResultController: ParentController, UICollectionViewDataSource, UICollecti
         return self.items.count
     }
     
+    func isHeader(index: Int) -> Bool {
+        return index < 14 || index % 14 == 0
+    }
+    
     // make a cell for each cell index path
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         // TODO: Refactor this
@@ -140,22 +144,25 @@ class ResultController: ParentController, UICollectionViewDataSource, UICollecti
         let index = indexPath.item
         
         var color: UIColor = UIColor.whiteColor()
-        if index < 14 || index % 14 == 0 {
+        let isHeader = self.isHeader(index)
+        if isHeader {
             color = UIColor.grayColor()
         }
         
         var labelText = self.items[index]
-        if let currentPN = Int(labelText) {
-            if (currentPN == 100) {
-                labelText = "+"
-            }
-            
-            if (currentPN == 0) {
-                labelText = ""
-            }
-            
-            if (currentPN >= pnValue) {
-                color = UIColor.greenColor()
+        if !isHeader {
+            if let currentPN = Int(labelText) {
+                if (currentPN == 100) {
+                    labelText = "+"
+                }
+                
+                if (currentPN == 0) {
+                    labelText = ""
+                }
+                
+                if (currentPN >= pnValue) {
+                    color = UIColor.greenColor()
+                }
             }
         }
         
