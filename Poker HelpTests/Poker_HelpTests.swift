@@ -14,6 +14,24 @@ class Poker_HelpTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        var vc: ViewController!
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let nav: UINavigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        vc = nav.topViewController as! ViewController
+        
+        
+        let smallBlind: Double = 100
+        let bigBlind: Double = 200
+        let ante: Double = 0
+        let stack: Double = 1000
+        let players: Double = 9
+        let leftOpponents: Double = 5
+        
+        
+        vc.calculatePN(smallBlind, bigBlindValue: bigBlind, anteValue: ante, stackValue: stack, playersValue: players, leftOpponentsValue: leftOpponents)
+        
+        XCTAssert(vc.pnValue == 16)
     }
     
     override func tearDown() {

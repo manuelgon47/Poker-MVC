@@ -63,6 +63,7 @@ class ViewController: ParentController {
             }
         }
     }
+    
     func openResults() {
         calculateResults()
         
@@ -70,6 +71,7 @@ class ViewController: ParentController {
     }
     
     func calculateResults() {
+        
         let smallBlindValue:Double = Double(smallBlind.text!)!
         let bigBlindValue:Double = Double(bigBlind.text!)!
         let anteValue:Double = Double(ante.text!)!
@@ -77,6 +79,11 @@ class ViewController: ParentController {
         let stackValue:Double = Double(stack.text!)!
         let playersValue:Double = Double(players.text!)!
         let leftOpponentsValue:Double = Double(leftOpponents.text!)!
+        
+        calculatePN(smallBlindValue, bigBlindValue: bigBlindValue, anteValue: anteValue, stackValue: stackValue, playersValue: playersValue, leftOpponentsValue: leftOpponentsValue)
+    }
+    
+    func calculatePN(smallBlindValue:Double, bigBlindValue:Double, anteValue:Double, stackValue:Double, playersValue:Double, leftOpponentsValue:Double) {
         
         // CPR (Cost Per Round)
         let cpr:Double = smallBlindValue + bigBlindValue + (playersValue * anteValue)
